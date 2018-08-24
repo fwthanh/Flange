@@ -138,7 +138,6 @@
 				D3555BF2212C4F0E004B9865 /* Frameworks */,
 				D3555BF3212C4F0E004B9865 /* Resources */,
 				FC529F527C353B1BD0D977B3 /* [CP] Embed Pods Frameworks */,
-				6740DA235022AAF6BA300837 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,21 +195,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6740DA235022AAF6BA300837 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flange/Pods-Flange-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		97EB7A747607881E1591AC86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
