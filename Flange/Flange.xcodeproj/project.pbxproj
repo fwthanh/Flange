@@ -15,6 +15,7 @@
 		D3555C03212C4F0F004B9865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3555C01212C4F0F004B9865 /* LaunchScreen.storyboard */; };
 		D3555C0E212C50D9004B9865 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C0D212C50D9004B9865 /* User.swift */; };
 		D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C10212C5E14004B9865 /* ViewExtension.swift */; };
+		D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F31664212F08EA006FC09C /* GuideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D3555C04212C4F0F004B9865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3555C0D212C50D9004B9865 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3555C10212C5E14004B9865 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		D3F31664212F08EA006FC09C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		F8BE2DDAE5DFE1B08A987C77 /* Pods_Flange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D3555BFA212C4F0E004B9865 /* ViewController.swift */,
+				D3F31664212F08EA006FC09C /* GuideViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				D3555BFB212C4F0E004B9865 /* ViewController.swift in Sources */,
 				D3555BF9212C4F0E004B9865 /* AppDelegate.swift in Sources */,
 				D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */,
+				D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */,
 				D3555C0E212C50D9004B9865 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
