@@ -17,6 +17,9 @@
 		D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C10212C5E14004B9865 /* ViewExtension.swift */; };
 		D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F31664212F08EA006FC09C /* GuideViewController.swift */; };
 		E54525922131979400D6E783 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54525912131979400D6E783 /* Dropdown.swift */; };
+		E545259521319AD100D6E783 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545259321319AD100D6E783 /* API.swift */; };
+		E545259621319AD100D6E783 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545259421319AD100D6E783 /* Router.swift */; };
+		E54525982131C38000D6E783 /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54525972131C38000D6E783 /* SelectionTableViewCell.swift */; };
 		E5861BE821313A58006E8DA4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5861BE721313A58006E8DA4 /* Info.plist */; };
 		E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */; };
 		E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */; };
@@ -36,6 +39,9 @@
 		D3555C10212C5E14004B9865 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		D3F31664212F08EA006FC09C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		E54525912131979400D6E783 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		E545259321319AD100D6E783 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E545259421319AD100D6E783 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E54525972131C38000D6E783 /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
 		E5861BE721313A58006E8DA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchVC.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D3555C10212C5E14004B9865 /* ViewExtension.swift */,
+				E54525972131C38000D6E783 /* SelectionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 		E5AD7BE22131841D000A65C3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E545259321319AD100D6E783 /* API.swift */,
+				E545259421319AD100D6E783 /* Router.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -275,10 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54525982131C38000D6E783 /* SelectionTableViewCell.swift in Sources */,
+				E545259621319AD100D6E783 /* Router.swift in Sources */,
 				E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */,
 				E54525922131979400D6E783 /* Dropdown.swift in Sources */,
 				E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */,
 				E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */,
+				E545259521319AD100D6E783 /* API.swift in Sources */,
 				D3555BFB212C4F0E004B9865 /* ViewController.swift in Sources */,
 				D3555BF9212C4F0E004B9865 /* AppDelegate.swift in Sources */,
 				D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */,

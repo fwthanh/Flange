@@ -11,10 +11,17 @@ import ActionSheetPicker
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var tfSpec: UITextField!
+    @IBOutlet weak var tfPressure: UITextField!
+    @IBOutlet weak var tfSize: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        API.sharedInstance.productCategories { (listCategory, string) in
+//            print("\(listCategory)")
+//        }
     }
 
     @IBAction func backAction(_ sender: AnyObject) {
@@ -22,11 +29,9 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func selectSpecAction(_ sender: AnyObject) {
-        ActionSheetStringPicker.show(withTitle: "", rows: ["123", "456"], initialSelection: 0, doneBlock: { (picker, index, string) in
-            print("success")
-        }, cancel: { (picker) in
-            print("cancel")
-        }, origin: sender)
+        ActionSheetStringPicker.show(withTitle: "", rows: ["123", "456"], initialSelection: 0, doneBlock: { (picker, index, value) in
+            self.tfSpec.text = value as? String
+        }, cancel: { (picker) in }, origin: sender)
     }
     
     @IBAction func selectPressureAction(_ sender: AnyObject) {
@@ -50,7 +55,7 @@ class SearchViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let resultSearchVC = storyboard.instantiateViewController(withIdentifier: "ResultSearchVC")
         let transition: CATransition = CATransition()
-        transition.duration = 0.3
+        transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         transition.type = kCATransitionReveal
         transition.subtype = kCATransitionFromRight
