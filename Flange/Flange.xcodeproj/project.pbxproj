@@ -16,6 +16,7 @@
 		D3555C0E212C50D9004B9865 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C0D212C50D9004B9865 /* User.swift */; };
 		D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C10212C5E14004B9865 /* ViewExtension.swift */; };
 		D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F31664212F08EA006FC09C /* GuideViewController.swift */; };
+		E5861BE821313A58006E8DA4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5861BE721313A58006E8DA4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +28,10 @@
 		D3555BFD212C4F0E004B9865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3555BFF212C4F0F004B9865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3555C02212C4F0F004B9865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D3555C04212C4F0F004B9865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3555C0D212C50D9004B9865 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3555C10212C5E14004B9865 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		D3F31664212F08EA006FC09C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		E5861BE721313A58006E8DA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BE2DDAE5DFE1B08A987C77 /* Pods_Flange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				D3555BF7212C4F0E004B9865 /* Flange */,
+				E5861BE721313A58006E8DA4 /* Info.plist */,
 				D3555BF6212C4F0E004B9865 /* Products */,
 				8E492544C16B971F298562E7 /* Pods */,
 				7A16ED36F30CA681E1D2CCE9 /* Frameworks */,
@@ -88,7 +90,6 @@
 				D3555C0A212C5069004B9865 /* Model */,
 				D3555C0B212C5077004B9865 /* View */,
 				D3555C0C212C5085004B9865 /* ViewController */,
-				D3555C04212C4F0F004B9865 /* Info.plist */,
 			);
 			path = Flange;
 			sourceTree = "<group>";
@@ -189,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5861BE821313A58006E8DA4 /* Info.plist in Resources */,
 				D3555C03212C4F0F004B9865 /* LaunchScreen.storyboard in Resources */,
 				D3555C00212C4F0F004B9865 /* Assets.xcassets in Resources */,
 				D3555BFE212C4F0E004B9865 /* Main.storyboard in Resources */,
@@ -402,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EE2V9KDD6C;
-				INFOPLIST_FILE = Flange/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EE2V9KDD6C;
-				INFOPLIST_FILE = Flange/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
