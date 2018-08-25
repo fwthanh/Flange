@@ -16,6 +16,7 @@
 		D3555C0E212C50D9004B9865 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C0D212C50D9004B9865 /* User.swift */; };
 		D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C10212C5E14004B9865 /* ViewExtension.swift */; };
 		D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F31664212F08EA006FC09C /* GuideViewController.swift */; };
+		E54525922131979400D6E783 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54525912131979400D6E783 /* Dropdown.swift */; };
 		E5861BE821313A58006E8DA4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5861BE721313A58006E8DA4 /* Info.plist */; };
 		E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */; };
 		E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */; };
@@ -34,6 +35,7 @@
 		D3555C0D212C50D9004B9865 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3555C10212C5E14004B9865 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		D3F31664212F08EA006FC09C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		E54525912131979400D6E783 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
 		E5861BE721313A58006E8DA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchVC.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				D3555C0D212C50D9004B9865 /* User.swift */,
 				E5AD7BE32131844C000A65C3 /* Categories.swift */,
+				E54525912131979400D6E783 /* Dropdown.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */,
+				E54525922131979400D6E783 /* Dropdown.swift in Sources */,
 				E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */,
 				E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */,
 				D3555BFB212C4F0E004B9865 /* ViewController.swift in Sources */,
