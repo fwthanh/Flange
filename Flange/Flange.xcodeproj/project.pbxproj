@@ -17,6 +17,9 @@
 		D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3555C10212C5E14004B9865 /* ViewExtension.swift */; };
 		D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F31664212F08EA006FC09C /* GuideViewController.swift */; };
 		E5861BE821313A58006E8DA4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5861BE721313A58006E8DA4 /* Info.plist */; };
+		E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */; };
+		E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */; };
+		E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE32131844C000A65C3 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		D3555C10212C5E14004B9865 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		D3F31664212F08EA006FC09C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		E5861BE721313A58006E8DA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchVC.swift; sourceTree = "<group>"; };
+		E5AD7BE32131844C000A65C3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		F8BE2DDAE5DFE1B08A987C77 /* Pods_Flange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D3555C0D212C50D9004B9865 /* User.swift */,
+				E5AD7BE32131844C000A65C3 /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 			children = (
 				D3555BFA212C4F0E004B9865 /* ViewController.swift */,
 				D3F31664212F08EA006FC09C /* GuideViewController.swift */,
+				E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */,
+				E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -122,12 +131,20 @@
 		D3555C0F212C511D004B9865 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E5AD7BE22131841D000A65C3 /* Service */,
 				D3555BF8212C4F0E004B9865 /* AppDelegate.swift */,
 				D3555BFC212C4F0E004B9865 /* Main.storyboard */,
 				D3555C01212C4F0F004B9865 /* LaunchScreen.storyboard */,
 				D3555BFF212C4F0F004B9865 /* Assets.xcassets */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E5AD7BE22131841D000A65C3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +243,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flange/Pods-Flange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFImageHelper/AFImageHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker/ActionSheetPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
@@ -235,6 +253,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFImageHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
@@ -253,6 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */,
+				E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */,
+				E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */,
 				D3555BFB212C4F0E004B9865 /* ViewController.swift in Sources */,
 				D3555BF9212C4F0E004B9865 /* AppDelegate.swift in Sources */,
 				D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */,

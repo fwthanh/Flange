@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // in half a second...
-            self.performSegue(withIdentifier: "showGuide", sender: nil)
+            self.performSegue(withIdentifier: "ShowGuide", sender: nil)
         }
     }
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showGuide" {
+        if segue.identifier == "ShowGuide" {
 //            let otpView: OTPViewController = segue.destination as! OTPViewController
 //            otpView.userId = userDetail.id
 //            otpView.otpBlock =  { (phone) -> Void in

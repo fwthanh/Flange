@@ -1,34 +1,29 @@
 //
-//  GuideViewController.swift
+//  ResultSearchVC.swift
 //  Flange
 //
-//  Created by PqThanh on 8/23/18.
+//  Created by Mac24h on 8/25/18.
 //  Copyright © 2018 pqt. All rights reserved.
 //
 
 import UIKit
 
-class GuideViewController: UIViewController {
+class ResultSearchVC: UIViewController {
 
-    //var continueBlock: ((String) -> Void)? = nil
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func continueAction(_ sender: AnyObject) {
+    @IBAction func backAction(_ sender: AnyObject) {
+        let transition: CATransition = CATransition()
+        transition.duration = 0.3
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionReveal
+        transition.subtype = kCATransitionFromLeft
+        self.view.window!.layer.add(transition, forKey: nil)
         self.dismiss(animated: false, completion: nil)
-//        let uiAlert = UIAlertController(title: errMsg, message: "", preferredStyle: UIAlertControllerStyle.alert)
-//        uiAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-//            print("Click of default button")
-//        }))
-//        self.present(uiAlert, animated: true, completion: nil)
-//        if let continueBlock = self.continueBlock {
-//            continueBlock("")
-//            self.dismiss(animated: true, completion: nil)
-//        }
     }
     
     override func didReceiveMemoryWarning() {

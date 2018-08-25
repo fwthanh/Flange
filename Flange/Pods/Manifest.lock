@@ -1,4 +1,5 @@
 PODS:
+  - ActionSheetPicker (1.6.2)
   - AFImageHelper (3.2.1)
   - Alamofire (4.7.2)
   - AlamofireObjectMapper (5.0.0):
@@ -9,6 +10,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - ActionSheetPicker
   - AFImageHelper
   - Alamofire
   - AlamofireObjectMapper
@@ -17,6 +19,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker
     - AFImageHelper
     - Alamofire
     - AlamofireObjectMapper
@@ -25,6 +28,7 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  ActionSheetPicker: cc5255a36aabaf34245b97a478059d26bac8cd84
   AFImageHelper: 9142599fb4f826b480d177902ab7f0c961bc966c
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
@@ -32,6 +36,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1fedeaa17d43a353570c7b0b83eef7a5d7a86e0d
+PODFILE CHECKSUM: 7e34b59c1ab0b1825298d38aaef89a6130303bd2
 
 COCOAPODS: 1.5.3

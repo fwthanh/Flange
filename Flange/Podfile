@@ -9,6 +9,7 @@ target 'Flange' do
 	pod 'Alamofire'
   	pod 'AlamofireObjectMapper'
 	pod 'AFImageHelper'
-    	pod 'IHKeyboardAvoiding'
-    	pod 'SVProgressHUD'
+    pod 'IHKeyboardAvoiding'
+    pod 'SVProgressHUD'
+    pod 'ActionSheetPicker'
 end
