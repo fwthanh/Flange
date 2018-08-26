@@ -24,6 +24,11 @@
 		E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */; };
 		E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */; };
 		E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7BE32131844C000A65C3 /* Categories.swift */; };
+		E5EE138F2132A49600A66BB2 /* Posted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE138E2132A49600A66BB2 /* Posted.swift */; };
+		E5EE13912132A51700A66BB2 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE13902132A51700A66BB2 /* Specs.swift */; };
+		E5EE13932132A58300A66BB2 /* Variations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE13922132A58300A66BB2 /* Variations.swift */; };
+		E5EE13952132A68C00A66BB2 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE13942132A68C00A66BB2 /* Products.swift */; };
+		E5EE13972132B80100A66BB2 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE13962132B80100A66BB2 /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchVC.swift; sourceTree = "<group>"; };
 		E5AD7BE32131844C000A65C3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		E5EE138E2132A49600A66BB2 /* Posted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posted.swift; sourceTree = "<group>"; };
+		E5EE13902132A51700A66BB2 /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		E5EE13922132A58300A66BB2 /* Variations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variations.swift; sourceTree = "<group>"; };
+		E5EE13942132A68C00A66BB2 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		E5EE13962132B80100A66BB2 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		F8BE2DDAE5DFE1B08A987C77 /* Pods_Flange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +124,10 @@
 				D3555C0D212C50D9004B9865 /* User.swift */,
 				E5AD7BE32131844C000A65C3 /* Categories.swift */,
 				E54525912131979400D6E783 /* Dropdown.swift */,
+				E5EE138E2132A49600A66BB2 /* Posted.swift */,
+				E5EE13902132A51700A66BB2 /* Specs.swift */,
+				E5EE13922132A58300A66BB2 /* Variations.swift */,
+				E5EE13942132A68C00A66BB2 /* Products.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +148,7 @@
 				D3F31664212F08EA006FC09C /* GuideViewController.swift */,
 				E5AD7BDE21315B22000A65C3 /* SearchViewController.swift */,
 				E5AD7BE021316390000A65C3 /* ResultSearchVC.swift */,
+				E5EE13962132B80100A66BB2 /* ProductViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,7 +301,9 @@
 			files = (
 				E54525982131C38000D6E783 /* SelectionTableViewCell.swift in Sources */,
 				E545259621319AD100D6E783 /* Router.swift in Sources */,
+				E5EE13932132A58300A66BB2 /* Variations.swift in Sources */,
 				E5AD7BE121316390000A65C3 /* ResultSearchVC.swift in Sources */,
+				E5EE13972132B80100A66BB2 /* ProductViewController.swift in Sources */,
 				E54525922131979400D6E783 /* Dropdown.swift in Sources */,
 				E5AD7BE42131844C000A65C3 /* Categories.swift in Sources */,
 				E5AD7BDF21315B22000A65C3 /* SearchViewController.swift in Sources */,
@@ -294,6 +311,9 @@
 				D3555BFB212C4F0E004B9865 /* ViewController.swift in Sources */,
 				D3555BF9212C4F0E004B9865 /* AppDelegate.swift in Sources */,
 				D3555C11212C5E14004B9865 /* ViewExtension.swift in Sources */,
+				E5EE13912132A51700A66BB2 /* Specs.swift in Sources */,
+				E5EE138F2132A49600A66BB2 /* Posted.swift in Sources */,
+				E5EE13952132A68C00A66BB2 /* Products.swift in Sources */,
 				D3F31665212F08EA006FC09C /* GuideViewController.swift in Sources */,
 				D3555C0E212C50D9004B9865 /* User.swift in Sources */,
 			);

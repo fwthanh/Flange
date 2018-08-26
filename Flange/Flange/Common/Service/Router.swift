@@ -12,18 +12,19 @@ import Alamofire
 
 public enum Router: URLConvertible {
     
+    static let urlHostString = "https://www.cabinc.com/"
     static let baseURLString = "https://www.cabinc.com/api/"
 
     //Store authenication token
     static var OAuthToken: String?
     
-    case login
+    case search
     case productCategories
     
     var path: String {
         switch self {
-        case .login:
-            return "login"
+        case .search:
+            return "search"
         case .productCategories:
             return "product_categories"
         }
