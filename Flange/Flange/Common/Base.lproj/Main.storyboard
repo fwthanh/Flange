@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2058,7 +2058,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-hA-CQD">
-                                <rect key="frame" x="15" y="159" width="290" height="250"/>
+                                <rect key="frame" x="15" y="109" width="290" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Introduction to Pipe Flanges" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is9-0c-xC3">
                                         <rect key="frame" x="10" y="36" width="270" height="53"/>
@@ -2162,7 +2162,7 @@
                             <constraint firstItem="a3j-Jn-8Xv" firstAttribute="top" secondItem="UjL-H9-YDL" secondAttribute="top" id="cxq-Ac-mWM"/>
                             <constraint firstItem="a3j-Jn-8Xv" firstAttribute="trailing" secondItem="KOc-TC-FoN" secondAttribute="trailing" id="f5b-Qo-AJU"/>
                             <constraint firstItem="KOc-TC-FoN" firstAttribute="bottom" secondItem="a3j-Jn-8Xv" secondAttribute="bottom" id="rH3-xX-xW3"/>
-                            <constraint firstItem="GH5-hA-CQD" firstAttribute="centerY" secondItem="KOc-TC-FoN" secondAttribute="centerY" constant="-10" id="sRs-WF-os0"/>
+                            <constraint firstItem="GH5-hA-CQD" firstAttribute="centerY" secondItem="KOc-TC-FoN" secondAttribute="centerY" constant="-60" id="sRs-WF-os0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KOc-TC-FoN"/>
                     </view>

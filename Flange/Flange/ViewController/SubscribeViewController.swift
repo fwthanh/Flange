@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SubscribeViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class SubscribeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
         self.contentView.layer.shadowPath = UIBezierPath(roundedRect:
             self.contentView.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         self.contentView.layer.shadowColor = UIColor.black.cgColor
@@ -31,7 +33,19 @@ class SubscribeViewController: UIViewController {
     }
     
     @IBAction func subscribeAction(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil)
+        if (tfEmail.text?.isEmpty)! || !tfEmail.text!.checkFormatEmail() {
+            let uiAlert = UIAlertController(title: "Please enter a valid email address!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+            uiAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                print("Click of default button")
+            }))
+            self.present(uiAlert, animated: true, completion: nil)
+            return
+        }
+        SVProgressHUD.show()
+        API.sharedInstance.emailSubscribe(email: tfEmail.text!) { (message) in
+            print(message ?? "")
+            SVProgressHUD.dismiss()
+        }
     }
     
     override func didReceiveMemoryWarning() {
