@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func subscribeAction(_ sender: AnyObject) {
+        
+    }
+    
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
     }

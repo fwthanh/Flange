@@ -19,6 +19,7 @@ public enum Router: URLConvertible {
     static var OAuthToken: String?
     
     case search
+    case emailSubscribe
     case productCategories
     
     var path: String {
@@ -27,6 +28,8 @@ public enum Router: URLConvertible {
             return "search"
         case .productCategories:
             return "product_categories"
+        case .emailSubscribe:
+            return "email_subscribe"
         }
     }
     

@@ -44,7 +44,25 @@ class API: NSObject {
         }
     }
     
-    //MARK: ----Account----
+    func emailSubscribe(email: String, completion: @escaping (_ result: [Products]?, _ posted: Posted?, _ errorMsg: String?) -> ()) -> () {
+        let params = ["email" : email] as [String : Any]
+        request(url: Router.emailSubscribe, method: .post, params: params, completion: { (result, error) in
+            if let result = result as? [String: Any] {
+                if let jsonArray = result["products"] as? [[String : Any]], let json = result["posted"] as? [String : Any] {
+                    let products = Mapper<Products>().mapArray(JSONArray: jsonArray)
+                    let posted = Mapper<Posted>().map(JSON: json)
+                    completion(products, posted, nil)
+                }
+                else {
+                    completion(nil, nil, "")
+                }
+            }
+            else {
+                completion(nil, nil, "")
+            }
+        })
+    }
+    
     func search(spec: String, Size: String, pressure_class: String, completion: @escaping (_ result: [Products]?, _ posted: Posted?, _ errorMsg: String?) -> ()) -> () {
         let params = ["spec" : spec, "Size": Size, "pressure_class": pressure_class] as [String : Any]
         request(url: Router.search, method: .post, params: params, completion: { (result, error) in
