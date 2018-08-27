@@ -13,13 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // in half a second...
-            self.performSegue(withIdentifier: "ShowGuide", sender: nil)
-        }
     }
     
-    @IBAction func subscribeAction(_ sender: AnyObject) {
-        
+    @IBAction func findAction(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "ShowGuide", sender: nil)
+    }
+    
+    @IBAction func openWebAction(_ sender: AnyObject) {
+        if let url = URL(string: "https://www.dev.freniklabs.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
@@ -28,13 +31,17 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowGuide" {
-//            let otpView: OTPViewController = segue.destination as! OTPViewController
-//            otpView.userId = userDetail.id
-//            otpView.otpBlock =  { (phone) -> Void in
-//                SVProgressHUD.show()
-//                self.userDetail.mobile = phone == "" ? "0" : phone
-//                self.tableView.reloadData()
-//            }
+            let guideViewController: GuideViewController = segue.destination as! GuideViewController
+            guideViewController.continueBlock =  { (message) -> Void in
+                self.performSegue(withIdentifier: "Search", sender: nil)
+            }
+        }
+        else if segue.identifier == "Search" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "SearchViewController")
+                self.present(controller, animated: true, completion: nil)
+            }
         }
     }
     

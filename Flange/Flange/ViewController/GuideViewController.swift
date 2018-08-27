@@ -10,7 +10,7 @@ import UIKit
 
 class GuideViewController: UIViewController {
 
-    //var continueBlock: ((String) -> Void)? = nil
+    var continueBlock: ((String) -> Void)? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +19,10 @@ class GuideViewController: UIViewController {
     }
 
     @IBAction func continueAction(_ sender: AnyObject) {
+        if let continueBlock = self.continueBlock {
+            continueBlock("")
+        }
         self.dismiss(animated: false, completion: nil)
-//        let uiAlert = UIAlertController(title: errMsg, message: "", preferredStyle: UIAlertControllerStyle.alert)
-//        uiAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-//            print("Click of default button")
-//        }))
-//        self.present(uiAlert, animated: true, completion: nil)
-//        if let continueBlock = self.continueBlock {
-//            continueBlock("")
-//            self.dismiss(animated: true, completion: nil)
-//        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -41,6 +41,16 @@ class ResultSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.dismiss(animated: false, completion: nil)
     }
     
+    @IBAction func openWebAction(_ sender: AnyObject) {
+        if let url = URL(string: "https://www.dev.freniklabs.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func searchMainMenuAction(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -67,6 +77,10 @@ class ResultSearchVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let product = self.products![indexPath.row]
         productVC.product = product
         productVC.posted = self.posted
+        productVC.searchMainBlock =  { (message) -> Void in
+            self.backAction(UIButton())
+        }
+        
         let transition: CATransition = CATransition()
         transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)

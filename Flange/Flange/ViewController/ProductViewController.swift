@@ -32,6 +32,8 @@ class ProductViewController: UIViewController {
     var product: Products? = nil
     var variation: Variations? = nil
     
+    var searchMainBlock: ((String) -> Void)? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -67,6 +69,20 @@ class ProductViewController: UIViewController {
         transition.subtype = kCATransitionFromLeft
         self.view.window!.layer.add(transition, forKey: nil)
         self.dismiss(animated: false, completion: nil)
+    }
+    
+    @IBAction func openWebAction(_ sender: AnyObject) {
+        if let url = URL(string: "https://www.dev.freniklabs.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func searchMainMenuAction(_ sender: AnyObject) {
+        self.dismiss(animated: false) {
+            if let searchMainBlock = self.searchMainBlock {
+                searchMainBlock("")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
